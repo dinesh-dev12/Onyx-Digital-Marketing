@@ -1,0 +1,754 @@
+/* Colors
+1.#ff695f
+2.#03a4ed */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.blue{
+    color: #03a4ed;
+}
+
+.orange{
+    color: #ff695f;
+}
+
+/*Preloader Starts here */
+.preloader{
+    height: 100vh;
+    text-align:center;
+}
+
+.preloader i{
+    color: #ff695f;
+    margin-top: 50vh;
+    font-size: 20px;
+    margin-left: 12px;
+    animation: dot2 2.4s;
+}
+
+.preloader .pre1{
+    animation: dot1 2.4s;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: all 3s ease;
+}
+
+@keyframes dot1{
+    50%{
+        transform: translate(110px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes dot2{
+    50%{
+        transform: translateX(-30px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
+/*Preloader Ends here */
+
+
+/* Header Starts Here  */
+
+header{
+    background-color:#f8f8f8;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+header .navbar-brand{
+    padding: 0;
+}
+
+header .navbar-brand img{
+    width: 100%;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle{
+    border: none;
+    margin: 0;
+}
+
+.navbar-default .navbar-toggle:hover{
+    background: none;
+}
+
+header .navbar-header button .line{
+    margin: 8px 0;
+}
+
+header .navbar-header button .line-1{
+    width: 25px;
+}
+
+header .navbar-header button .line-2{
+    width: 30px;
+}
+
+header .navbar-header button .line-3{
+    width: 20px;
+}
+
+header #mynavbar ul {
+    margin-right:50px;
+}
+
+header #mynavbar ul li a {
+    color: black;
+    font-size:15.5px;
+    font-weight: 500;
+    margin: 0 3px;
+}
+
+header #mynavbar ul li a:hover{
+    color: #ff695f;
+}
+
+header #mynavbar ul button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff695f;
+    color: white;
+    margin-left: 35px;
+}
+
+header #mynavbar ul button:hover{
+    background-color: #03a4ed;
+}
+
+header hr{
+    display: none;
+}
+
+.myheader{
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-color: white;
+}
+
+.colors{
+    background-color: white;
+}
+
+.home ,.left,.right{
+    padding: 0;
+    margin: 0;
+}
+
+.home .center{
+    margin-top: 5%;
+}
+
+.home .right img{
+    width: 85%;
+    margin-left: 15%;
+}
+
+.no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#mycarousel .carousel-indicators{
+    position: relative;
+    top: 60px;
+    left: 170px;
+    width: 100px;
+    color: black;
+}
+
+#mycarousel .carousel-indicators li{
+    background-color: black;
+}
+
+.center .item h1{
+    font-weight:700;
+    font-size: 50px;
+    margin: 20px 0;
+    line-height: 70px;
+}
+
+.center .item p{
+    line-height: 30px;
+}
+
+.center .item button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #03a4ed;
+    color: white;
+}
+
+.center .item button:hover{
+    background-color: #ff695f;
+}
+
+.center .item .fa{
+    background-color: #ff695f;
+    color: white;
+    padding: 12px 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius:50%;
+    margin-left: 20px;
+}
+
+.center .item p{
+    display: inline-block;
+}
+
+/*Services Starts Here*/
+
+.services .right h1,.about .right h1{
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.services .right h1 .transparent , .portfolio .right h2 .transparent{
+    color: #ff695f;
+    opacity: 20%;
+}
+
+.services .right{
+    margin:6% 0;
+    text-align: right;
+}
+
+.services .carousel .owl-carousel{
+    margin-top:-25%;
+    margin-bottom: 10%;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+    display: none;
+}
+
+.owl-theme .owl-dots {
+    margin:30px 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #ff695f;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #f39c96;
+}
+
+.services .carousel .item{
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.services .carousel .item h4{
+    font-weight: 700;
+    font-size:21px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.services .carousel .item img{
+    width: 15%;
+    margin: 30px auto;
+}
+
+.services .carousel .item hr{
+    width: 70%;
+}
+
+.services .carousel .item p{
+    width: 85%;
+    text-align: center;
+    font-size: 16px;
+    margin: 25px auto;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.services .bottom{
+    margin-top:-14%;
+}
+/*Services Ends Here*/
+
+/*About Starts Here*/
+.about{
+    margin-bottom: 100px;
+}
+.about .left img{
+    width: 600px;
+}
+
+.about .right h1{
+    text-align:left;
+    line-height: 40px;
+}
+
+.about .right p{
+    margin: 40px 0;
+    line-height:30px;
+    text-align:left;
+    font-size: 15px;
+}
+
+.about .right .box h1{
+    font-size: 45px;
+}
+
+.about .right .box h5{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.about .right .box p{
+    font-size:14px;
+}
+/*About Ends Here*/
+
+/* portfolio Starts Here */
+.portfolio .right h2{
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+}
+
+.portfolio .right h2 .transparent{
+    display: block;
+}
+.portfolio .carousel .item img{
+    border-radius: 20px;
+}
+
+.portfolio .carousel .item img:hover{
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.portfolio .carousel .item .content{
+    width: 50%;
+    height: 35%;
+    background-image: url("../images/hover-bg.png");
+    background-size:cover;
+    border-radius: 30px 0 30px 0;
+    top: 120%;
+    position: absolute;
+}
+.portfolio .carousel .item:hover .content{
+    position: absolute;
+    top: 58%;
+    left:45%;
+    transition: 0.5s ;
+}
+
+.portfolio .carousel .item .content h3{
+    color: white;
+    font-weight: 600;
+    line-height:40px;
+    position: relative;
+    top: 35%;
+    left: 10%;
+}
+
+.portfolio .carousel .item .content h3 span{
+    font-size: 15px;
+    font-weight: 300;
+}
+/* portfolio Ends Here */
+
+/* Plans Starts Here */
+.plan-1{
+    margin-top: 50px;
+}
+.plan-1 h1{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.plan-1 h1 .transparent{
+    display: block;
+    opacity: 20%;
+}
+
+.plan-2{
+    padding:0;
+    margin-top:-10%;
+}
+.plan-2 .left{
+    text-align: left;
+ }
+
+.plan-2 .right{
+   text-align: right;
+}
+
+.plan-3 .center{
+    text-align: center;
+    margin-top: -32%;
+}
+
+.plan-3 .center .card{
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.width{
+    width: 32%;
+}
+
+.margin{
+    margin: 0 2%;
+}
+
+.plan-3 .center .card-1{
+    background-image: url("../images/first-plan-bg.png");
+}
+
+.plan-3 .center .card-2{
+    background-image: url("../images/second-plan-bg.png");
+}
+
+.plan-3 .center .card-3{
+    background-image: url("../images/third-plan-bg.png");
+}
+
+.plan-3 .center .card h4{
+    font-weight: 700;
+    font-size: 20px;
+    margin: 50px 0 20px 0;
+}
+
+.plan-3 .center .card .line{
+    text-decoration: line-through;
+    color: #ff695f;
+}
+
+.plan-3 .center .card h1{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.plan-3 .center .card h5{
+    font-weight: 400;
+    color: grey;
+    margin: 25px 0;
+    font-size: 15px;
+}
+
+.plan-3 .center .card button{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #03a4ed;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.plan-3 .center .card button:hover{
+    background-color: #ff695f;
+}
+
+
+/* Plans Ends Here *
+
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Query Starts Here*/
+@media (max-width:1650px){
+    .plan-3 .center{
+        margin-top:-40% ;
+    }
+}
+
+@media (max-width:1400px){
+    header #mynavbar ul li a{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width:1200px){
+    .services .left {
+        margin-top: 15%;
+    }
+    .services .left img{
+        /* width: 90%; */
+    }
+
+    .services .right{
+        margin: 20% 0;
+    }
+
+    .services .carousel .owl-carousel{
+        margin-top: -40%;
+    }
+
+    .about .left img{
+        width: 100%;
+        margin:0% auto;
+    }
+
+    .plan-3 .center {
+        margin-top:-58% ;
+    }
+}
+
+@media (max-width:992px){
+    
+    header #mynavbar ul li a{
+        font-size: 15px;
+    }
+    
+    header #mynavbar ul button{
+        display: none;
+    }
+
+    .home .right{
+        display: none;
+    }
+
+    .services .left{
+        margin-top: 0;
+    }
+
+    .services .left img{
+        /* width: 170%; */
+    }
+
+    .services .right{
+        margin: 10% 0;
+    }
+    
+    .services .carousel .item h4{
+        font-size: 20px;
+    }
+
+    .about .right .box p{
+        text-align: center;
+    }
+    .about .right{
+        text-align: center;
+    }
+
+    .about .right h1{
+        text-align: center;
+    }
+
+    .plan-3 .center{
+        margin-top: -75%;
+    }
+
+    .width{
+        width: 100%;
+    }
+
+    .margin{
+        margin:40px 0;
+    }
+
+}
+
+@media (max-width:792px){
+    
+    header #mynavbar ul{
+        margin: 0;
+        text-align: center;
+    }
+
+    header #mynavbar ul li{
+        margin: 10px 10px;
+    }
+
+    header #mynavbar ul li a{
+        padding: 0;
+    }
+
+    .services .carousel .owl-carousel{
+        margin-top: -60%;
+    }
+
+    .services .right{
+        margin: 15% 0;
+    }
+
+    .about .left img{
+        margin: 0;
+    }
+
+    .about .right{
+        text-align: center;
+    }
+
+    .about .right p{
+        text-align: center;
+    }
+
+    .width{
+        width: 100%;
+    }
+
+    .margin{
+        margin:40px 0;
+    }
+    
+    .plan-3 .center{
+        margin-top: -100%;
+    }
+}
+
+@media (max-width:552px){
+
+    .home .center h1{
+        font-size: 40px; 
+        line-height: 50px;  
+    }
+
+    .home .center button{
+        display: block;
+    }
+    .home .center .fa{
+        margin-top: 15px;
+    }
+
+    .services .left img{
+        width: 400%;
+    }
+
+    .services .right{
+        margin: 0;
+    }
+
+    .services .right h1{
+        font-size: 26px;
+    }
+
+    .services .carousel .owl-carousel{
+        margin-top:-45%;
+    }
+
+    .services .carousel .item h4{
+        font-size: 17px;
+    }
+    .services .bottom{
+        margin-top:-25% ;
+    }
+    
+    .margin{
+        margin:40px 0;
+    }
+
+    .portfolio .item .content h3{
+        font-size: 18px;
+        position: relative;
+        left: 5%;
+    }
+
+    .portfolio .carousel .item .content{
+        width:65%;
+        height: 35%;
+        background-image: url("../images/hover-bg.png");
+        background-size:cover;
+        border-radius: 30px 0 30px 0;
+        top: 120%;
+        position: absolute;
+        left: 10%;
+    }
+    .portfolio .carousel .item:hover .content{
+        position: absolute;
+        top: 55%;
+        left:30%;
+        transition: 0.5s ;
+    }
+
+    .plan-2 .right img{
+        text-align: right;
+    }
+
+    .plan-2 .left img, .plan-2 .right img{
+        width: 300px;
+    }
+
+    .plan-3 .center{
+        margin-top: -140%;
+    }
+}
+@media (max-width:359px){
+    .plan-2 .left img , .plan-2 .right img{
+        /* width: 300px; */
+    }
+    .plan-3 .center{
+        margin-top: -200%;
+    }
+}
+
+
+
