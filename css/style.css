@@ -235,7 +235,6 @@ header hr{
 }
 
 /*Services Starts Here*/
-
 .services .right h1,.about .right h1{
     font-weight: 700;
     text-align: center;
@@ -401,6 +400,7 @@ header hr{
 .plan-1{
     margin-top: 50px;
 }
+
 .plan-1 h1{
     font-weight: 700;
     font-size: 30px;
@@ -416,7 +416,9 @@ header hr{
 .plan-2{
     padding:0;
     margin-top:-10%;
+    margin-bottom: 20px;
 }
+
 .plan-2 .left{
     text-align: left;
  }
@@ -437,7 +439,7 @@ header hr{
 }
 
 .width{
-    width: 32%;
+    width: 25%;
 }
 
 .margin{
@@ -491,11 +493,63 @@ header hr{
     margin-bottom: 50px;
 }
 
-.plan-3 .center .card button:hover{
+.plan-3 .center .card button:hover, .plan-3 .form .form-1 button:hover{
     background-color: #ff695f;
 }
 
+.plan-3 .form{
+    height: 250px;
+    background-image: url("../images/subscribe-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    border-radius: 25px;
+}
 
+.plan-3 .form h2{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    position:relative;
+    left: 10%;
+    top: 50px;
+}
+
+.plan-3 .form .form-1{
+    background-color: white;
+    height:75px;
+    border-radius: 45px;
+}
+
+.plan-3 .form .form-1 .fill-1{
+    width: 38%;
+    height: 75px;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: 1px solid rgb(218, 217, 217);
+    margin: 0 10px;
+}
+
+.plan-3 .form .form-1 .fill-2{
+    width: 38%;
+    height: 75px;
+    border: none;
+}
+
+.plan-3 .form .form-1 input::-webkit-input-placeholder{
+    color: rgb(173, 173, 173);
+    font-size: 15px;
+}
+
+.plan-3 .form .form-1 button{
+    width:20%;
+    height: 40px;
+    background-color: #03a4ed;
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
 /* Plans Ends Here *
 
 /
@@ -540,9 +594,6 @@ header hr{
     .services .left {
         margin-top: 15%;
     }
-    .services .left img{
-        /* width: 90%; */
-    }
 
     .services .right{
         margin: 20% 0;
@@ -558,7 +609,11 @@ header hr{
     }
 
     .plan-3 .center {
-        margin-top:-58% ;
+        margin-top:-68% ;
+    }
+
+    .width{
+        width: 32%;
     }
 }
 
@@ -578,10 +633,6 @@ header hr{
 
     .services .left{
         margin-top: 0;
-    }
-
-    .services .left img{
-        /* width: 170%; */
     }
 
     .services .right{
@@ -613,6 +664,24 @@ header hr{
 
     .margin{
         margin:40px 0;
+    }
+
+    .plan-3 .form {
+        margin: 100px 0;
+    }
+
+    .plan-3 .form h2{
+        position: relative;
+        left: 50px;
+    }
+
+    .plan-3 .form img{
+        position:relative;
+        left:-50px ;
+    }
+
+    .plan-3 .form .form-1 button{
+        width: 19%;
     }
 
 }
@@ -662,6 +731,18 @@ header hr{
     
     .plan-3 .center{
         margin-top: -100%;
+    }
+
+    .plan-3 .form img{
+        display: none;
+    }
+
+    .plan-3 .form h2{
+        position: relative;
+        left: 0;
+    }
+    .plan-3 .form .form-1{
+        margin-top: 60px;
     }
 }
 
@@ -738,15 +819,60 @@ header hr{
     }
 
     .plan-3 .center{
-        margin-top: -140%;
+        margin-top: -130%;
+    }
+
+    .plan-3 .form .form-1{
+        margin-top: 70px;
+        height: 65px;
+    }
+
+    .plan-3 .form {
+        height: 300px;
+    }
+
+    .plan-3 .form .form-1 .fill-1 ,.plan-3 .form .form-1 .fill-2{
+        width: 49%;
+        height: 50px;
+        margin: 0;
+    }
+
+    .plan-3 .form .form-1 .fill-2{
+        border-top-right-radius: 25px;
+    }
+
+    .plan-3 .form .form-1 button{
+        width: 100%;
+        background-color: #ff695f;
+        margin-top: 30px;
+    }
+
+    .plan-3 .form h2{
+        font-size: 24px;
     }
 }
 @media (max-width:359px){
-    .plan-2 .left img , .plan-2 .right img{
-        /* width: 300px; */
-    }
+
     .plan-3 .center{
         margin-top: -200%;
+    }
+
+    .services .carousel .item{
+        margin-top: 60px;
+    }
+
+    .plan-1 h1{
+        font-size: 28px;
+    }
+
+    .plan-3 .form .form-1, .plan-3 .form .form-1 .fill-1,.plan-3 .form .form-1 .fill-2{
+       height: 50px;
+    }
+
+    .plan-3 .form .form-1 input::-webkit-input-placeholder{
+        /* color: rgb(173, 173, 173); */
+        font-size: 13.5px;
+        /* margin: 0; */
     }
 }
 
