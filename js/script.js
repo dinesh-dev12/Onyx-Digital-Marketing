@@ -1,10 +1,10 @@
 /*preloader*/
-window.addEventListener("load", () =>{
-    document.querySelector(".preloader").classList.add("fade-out");
-    setTimeout(() =>{
-        document.querySelector(".preloader").style.display="none";
-    },3000)
-});
+// window.addEventListener("load", () =>{
+//     document.querySelector(".preloader").classList.add("fade-out");
+//     setTimeout(() =>{
+//         document.querySelector(".preloader").style.display="none";
+//     },3000)
+// });
 
 $('.car-1').owlCarousel({
     loop:true,
@@ -61,4 +61,33 @@ $(window).scroll(function(){
   
     if (scroll >= 100) sticky.addClass('colors');
     else sticky.removeClass('colors');
+});
+
+$(".box-1").click(function(){
+    $(".frame1").show(200);
+    $(".frame2").hide(100);
+    $(".frame3").hide(100);
+    $(".frame4").hide(100);
+});
+
+
+$(".box-2").click(function(){
+    $(".frame2").show(200);
+    $(".frame1").hide(100);
+    $(".frame3").hide(100);
+    $(".frame4").hide(100);
+});
+
+$(".box-3").click(function(){
+    $(".frame3").show(200);
+    $(".frame1").hide(100);
+    $(".frame2").hide(100);
+    $(".frame4").hide(100);
+});
+
+$(".box-4").click(function(){
+    $(".frame4").show(200);
+    $(".frame1").hide(100);
+    $(".frame2").hide(100);
+    $(".frame3").hide(100);
 });
