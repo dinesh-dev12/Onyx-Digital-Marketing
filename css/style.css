@@ -32,17 +32,13 @@ html{
     margin-top: 50vh;
     font-size: 20px;
     margin-left: 12px;
-    animation: dot2 2.4s;
+    animation: dot2 3s ;
 }
 
 .preloader .pre1{
-    animation: dot1 2.4s;
+    animation: dot1 3s;
 }
 
-.fade-out{
-    opacity: 0;
-    transition: all 3s ease;
-}
 
 @keyframes dot1{
     50%{

@@ -1,10 +1,10 @@
 /*preloader*/
-// window.addEventListener("load", () =>{
-//     document.querySelector(".preloader").classList.add("fade-out");
-//     setTimeout(() =>{
-//         document.querySelector(".preloader").style.display="none";
-//     },3000)
-// });
+window.addEventListener("load", () =>{
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(() =>{
+        document.querySelector(".preloader").style.display="none";
+    },3000)
+});
 
 $('.car-1').owlCarousel({
     loop:true,
